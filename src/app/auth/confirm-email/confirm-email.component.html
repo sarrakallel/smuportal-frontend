@@ -1,0 +1,28 @@
+<div class="container d-flex h-100">
+  <div role="form" class="main-form border rounded shadow-sm bg-white">
+    <div class="row">
+      <div class="col text-center">
+        <h5 [ngClass]="{'success-alert': !fail, 'fail-alert': fail}" class="alert" role="alert">
+          {{ message }}
+        </h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <div class="mx-auto">
+          <p class="ml-2 mr-2">You will be automatically redirected to the login page after 10 secs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <button type="submit" routerLink="/login" class="btn btn-primary login-btn-color">Redirect</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <br> <!-- Don't judge -->
+      </div>
+    </div>
+  </div>
+</div>

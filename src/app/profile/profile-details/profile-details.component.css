@@ -1,0 +1,32 @@
+#page-content-wrapper {
+  margin-top: 2vw;
+  margin-left: 5vw;
+  color: rgb(112,112,112);
+}
+
+#edit-password:hover {
+  cursor: pointer;
+  color: rgb(226, 114, 34);
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default:active:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default{
+  padding: 1% 6%;
+  border-color: rgb(226, 114, 34);
+  background-color: rgb(226, 114, 34);
+  color: white;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  #page-content-wrapper {
+    min-width: 0;
+  }
+}
+
+/* Hides border right of sidebar on small screens (1 pixel less to hide at the right moment)*/
+@media (max-width: 767px) {
+  #page-content-wrapper {
+    margin-top: 2em !important;
+    margin-left: 1em !important;
+  }
+}

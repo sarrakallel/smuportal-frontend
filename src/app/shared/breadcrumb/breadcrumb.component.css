@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Lato;
+	src: url(https://fonts.googleapis.com/css?family=Lato&display=swap)
+}
+.breadcrumb {
+  background-color: #ffffff;
+}
+.breadcrumb > li + li:before {
+  color: #028B95;
+  content: ">"; /* for the time being the seperator is a text character
+                    we can use FA's svg, but it's under CC 4.0
+                */
+
+}
+.breadcrumb-item {
+  color: #0099FF;
+  font-family: 'Lato';
+}
+.active {
+  color: #028B95;
+}

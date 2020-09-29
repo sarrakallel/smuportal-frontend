@@ -1,0 +1,59 @@
+.container {
+	position: absolute
+}
+
+
+
+#mainCard {
+	overflow: visible;
+	position: absolute;
+	left: 315px;
+	top: 118px;
+	width: 1290px;
+	height: 743px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 #00000030
+}
+
+#responseCard {
+	filter: drop-shadow(0 3px 6px #00000029);
+	position: absolute;
+	overflow: visible;
+	width: 447px;
+	height: 400px;
+	left: 1124px;
+	top: 300px;
+	border-radius: 20px 0 20px 0
+}
+
+#reponseCard1 {
+  filter: drop-shadow(0 3px 6px #00000029);
+  position: absolute;
+  margin-top: 25%;
+  overflow: visible;
+  width: 300px;
+  white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 19px;
+  color: #646464;
+
+}
+
+#formPassword {
+  margin-top: 8%;
+}
+
+#invalidRes{
+  position: absolute;
+  margin-top: 55%;
+}
+
+#btnUpdate {
+  background-color: #e27222;
+	width: 80%;
+	height: 35px;
+	color: #fff;
+	border-color: #ffffff00
+}

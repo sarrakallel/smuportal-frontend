@@ -1,0 +1,31 @@
+<div class="container d-flex h-100">
+  <form role="form" #totpForm="ngForm" class="main-form border rounded shadow-sm bg-white"
+    (ngSubmit)="onSubmit(totpForm)" novalidate>
+    <div class="row">
+      <div class="col text-center">
+        <div class="alert my-alert" role="alert">
+          Please check your {{twoFactorType}} and enter your code.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <div class="form-group w-50 mx-auto">
+          <label for="twoauthcode">Verification Code : </label>
+          <input type="text" name="otp" id="twoauthcode" class="form-control" #totpcode="ngModel"
+            [(ngModel)]="totp.code">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <button type="submit" class="btn btn-primary login-btn-color">Enter</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <br> <!-- Don't judge -->
+      </div>
+    </div>
+  </form>
+</div>

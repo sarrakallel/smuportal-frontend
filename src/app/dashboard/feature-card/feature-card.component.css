@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Lato;
+  src: url(https://fonts.googleapis.com/css?family=Lato&display=swap)
+}
+
+.custom-card {
+  width: 220px;
+  height: 216px;
+  font-family: 'Lato', sans-serif;
+}
+
+.feature-title {
+  font-size: 1.375rem;
+}
+
+.custom-text {
+  font-size: 0.8125rem;
+}
+
+/* Leaves a margin between card border and card text, default was -15 */
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}

@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="card" id="mainCard">
+  </div>
+  <div class="card" id="loginCard">
+    <div class="card-body">
+      <form #loginForm="ngForm" (ngSubmit)="loginForm.valid && onSubmit(loginForm)">
+        <input type="email" class="form-control" id="email-position" name="email"
+          placeholder="Email" #email="ngModel" [(ngModel)]="userModel.email" required
+          [ngClass]="{'invalid-textbox': loginForm.submitted && !email.valid}" >
+
+        <input type="password" class="form-control" id="pwd-position" name="password"
+          placeholder="Password" #password="ngModel" [(ngModel)]="userModel.password" required>
+        <div class="form-check mb-2" id="chckBx">
+          <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+          <label class="form-check-label" for="autoSizingCheck">
+            Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary loginBtnColor btnPosition">Login</button>
+      </form>
+      <a id="forgotPwd" routerLink="/request-reset-password">Forgot Your Password ?</a>
+    </div>
+  </div>
+  <app-home-message></app-home-message>
+</div>
+<div id="emailMSG">
+  <span>Enter Your University Email Address : </span>
+</div>
+<div id="pwdMSG">
+  <span>Password : </span>
+</div>

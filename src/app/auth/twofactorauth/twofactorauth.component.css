@@ -1,0 +1,23 @@
+@font-face {
+	font-family: Lato;
+	src: url(https://fonts.googleapis.com/css?family=Lato&display=swap)
+}
+
+.main-form {
+  width: 350px;
+  margin: auto;
+  font-family: 'Lato';
+}
+.login-btn-color {
+  background-color: #e27222;
+  color: #fff;
+  border-color: #ffffff00;
+  width: 50%;
+}
+.btn-space {
+  margin-right: 5px;
+}
+.my-alert{
+  background-color: #028b95;
+  color: #fff;
+}

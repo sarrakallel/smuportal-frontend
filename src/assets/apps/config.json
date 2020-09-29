@@ -1,0 +1,22 @@
+[
+  {
+    "appName": "Logistics Reservation",
+    "iconUrl": "logistics-reservation.png",
+    "path": "/apps/logistics"
+  },
+  {
+    "appName": "Job App",
+    "iconUrl": "job-applications.png",
+    "path": "/apps/jobs"
+  },
+  {
+    "appName": "Document and Services",
+    "iconUrl": "docs.png",
+    "path": "/apps/docs"
+  },
+  {
+    "appName": "Admin Dashboard",
+    "iconUrl": "users.png",
+    "path": "/apps/admin"
+  }
+]

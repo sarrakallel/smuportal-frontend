@@ -1,0 +1,96 @@
+@font-face {
+	font-family: Lato;
+	src: url(https://fonts.googleapis.com/css?family=Lato&display=swap)
+}
+
+.container {
+	position: absolute
+}
+
+#mainCard {
+	overflow: visible;
+	position: absolute;
+	left: 315px;
+	top: 118px;
+	width: 1290px;
+	height: 743px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 #00000030
+}
+
+#loginCard {
+	filter: drop-shadow(0 3px 6px #00000029);
+	position: absolute;
+	overflow: visible;
+	width: 447px;
+	height: 477px;
+	left: 1124px;
+	top: 300px;
+	border-radius: 20px 0 20px 0
+}
+
+#emailMSG {
+	position: absolute;
+	left: 1142px;
+	top: 423px;
+	overflow: visible;
+	width: 287px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 19px;
+	color: #646464
+}
+
+.loginBtnColor {
+	background-color: #e27222;
+	width: 80%;
+	height: 35px;
+	color: #fff;
+	border-color: #ffffff00
+}
+
+.btnPosition {
+	position: absolute;
+	top: 349px
+}
+
+#email-position {
+	position: absolute;
+	overflow: visible;
+	top: 160px;
+	width: 80%
+}
+
+#pwd-position {
+	position: absolute;
+	overflow: visible;
+	top: 258px;
+	width: 80%
+}
+
+#chckBx {
+	top: 290px
+}
+
+#pwdMSG {
+	position: absolute;
+	left: 1145px;
+	top: 520px;
+	overflow: visible;
+	width: 300px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 19px;
+	color: #646464
+}
+
+#forgotPwd {
+	position: absolute;
+	top: 400px;
+	color: #028b95
+}

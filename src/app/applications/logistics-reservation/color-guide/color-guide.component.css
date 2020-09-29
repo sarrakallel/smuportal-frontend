@@ -1,0 +1,13 @@
+.list-group-item {
+  background-color: #f8f9fa;
+  border: 0 none;
+  display: inline-flex; /* make element size relative to content */
+  align-items: center; /* vertical alignment of items */
+  padding: 3px 10px; /* horizontal vertical position with padding */
+}
+
+fa-icon {
+  border-radius: 0 !important;
+  margin-right: 10px;
+  filter: drop-shadow(1px 1px 2px #272634)
+}

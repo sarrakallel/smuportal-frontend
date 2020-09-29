@@ -1,0 +1,100 @@
+body {
+  width: 100%;
+}
+
+.navbar {
+  padding: 0;
+  background-color: rgb(2,139,149);
+}
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 0;
+  width: 217px;
+}
+
+.nav-item > a {
+  color:white;
+}
+
+#wrapper {
+  height: 100%; /* cross-browser */
+}
+
+#sidebar-wrapper {
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+.border-right {
+  border-color: rgb(112,112,112) !important;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: .875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  margin-top: 3rem;
+  padding-right: 1.2em;
+  width: 15rem;
+}
+
+/* Fixes overlapping group items */
+.list-group-item + .list-group-item.active {
+  margin-top: 0;
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+.list-group-item:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+#sidebar-wrapper .selected {
+  background-color: rgba(112,112,112, 30%);
+  color: rgb(73, 80, 87);
+}
+
+#sidebar-wrapper .list-group-item-action {
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.btn-default, .btn-default:hover, .btn-default:focus, .btn-default:active:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default{
+  padding: 1% 6%;
+  border-color: rgb(226, 114, 34);
+  background-color: rgb(226, 114, 34);
+  color: white;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+/* Hides border right of sidebar on small screens (1 pixel less to hide at the right moment)*/
+@media (max-width: 767px) {
+  #sidebar-wrapper {
+    border-right-width: 0px !important;
+  }
+}

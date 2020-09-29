@@ -1,0 +1,49 @@
+<!-- Page Content -->
+<div id="page-content-wrapper">
+  <div class="container">
+    <h1>Manage your Account</h1>
+    <p>Basic information regarding your SMU account that you have created</p>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col font-weight-bold">First Name:</div>
+        <div class="col font-weight-bold">Last Name:</div>
+      </div>
+      <div class="row">
+        <div class="col">{{ User?.firstName | titlecase  }}</div>
+        <div class="col">{{ User?.lastName | titlecase }}</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col font-weight-bold">SMU ID:</div>
+        <div class="col font-weight-bold">Email:</div>
+      </div>
+      <div class="row">
+        <div class="col">{{ User?.universityID | universityID }}</div>
+        <div class="col">{{ User?.email }}</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col font-weight-bold">University:</div>
+      </div>
+      <div class="row">
+        <div class="col">South Mediterranean University</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col font-weight-bold">Last login:</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">{{ User?.lastLogin | date:'medium'}}</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col font-weight-bold">Registered on:</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">{{ User?.registeredOn | date:'medium'}}</div>
+      </div>
+      <div class="row my-4 pb-4 border-bottom">
+        <div class="col font-weight-bold"><span class="mr-3">Modify Password</span>
+          <fa-icon [icon]="faPencilAalt" id="edit-password"></fa-icon>
+          </div>
+      </div>
+      <button type="button" class="btn btn-default">Save</button>
+    </div>
+  </div>
+</div>

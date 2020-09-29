@@ -1,0 +1,128 @@
+@font-face {
+	font-family: Lato;
+	src: url(https://fonts.googleapis.com/css?family=Lato&display=swap)
+}
+
+#blueRect {
+	opacity: .73;
+	filter: blur(4px);
+	width: 761px;
+	height: 743px
+}
+
+.blueRect {
+	position: absolute;
+	overflow: visible;
+	width: 761px;
+	height: 743px;
+	top: 119px;
+	left: 315px
+}
+
+#medtech {
+	position: absolute;
+	width: 761px;
+	height: 743px;
+	left: 315px;
+	top: 119px;
+	overflow: visible
+}
+
+#SMU_PORTAL {
+	position: absolute;
+	left: 1113px;
+	top: 140px;
+	overflow: visible;
+	width: 425px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 70px;
+	color: #028b95
+}
+
+#introToSMU {
+	position: absolute;
+	left: 1142px;
+	top: 342px;
+	overflow: visible;
+	width: 350px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 19px;
+	color: #646464
+}
+
+#SMUinCard {
+	position: absolute;
+	left: 1142px;
+	top: 300px;
+	overflow: visible;
+	width: 362px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	color: #646464
+}
+
+#ENTERING_SMU {
+	position: absolute;
+	left: 352px;
+	top: 396px;
+	overflow: visible;
+	width: 512px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 70px;
+	color: #fff
+}
+
+#PORTAL_ {
+	position: absolute;
+	left: 352px;
+	top: 463px;
+	overflow: visible;
+	width: 271px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 70px;
+	color: #fff
+}
+
+#portalDesc {
+	position: absolute;
+	left: 360px;
+	top: 556px;
+	overflow: visible;
+	width: 599px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 20px;
+	color: #fff
+}
+
+#linkDesc {
+	color: #fff;
+	text-decoration: underline
+}
+
+.email {
+  color: #ff8800;
+}

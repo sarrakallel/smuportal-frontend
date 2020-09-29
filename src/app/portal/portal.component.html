@@ -1,0 +1,31 @@
+<div class="card" id="mainCard">
+</div>
+<div class="card" id="loginCard">
+  <div class="card-body">
+    <a routerLink="login">
+      <button type="button" class="btn btn-primary bluetech-background blutech-position">
+        <span class="btn-label"></span>
+        Student Portal
+        <fa-icon [icon]="faArrowRight" id="rightArrow"></fa-icon>
+      </button>
+    </a>
+    <a routerLink="login">
+      <button type="button" class="btn btn-primary orangetech-background orangetech-position">
+        <span class="btn-label"></span>
+        Professor Portal
+        <fa-icon [icon]="faArrowRight" id="rightArrow"></fa-icon>
+      </button>
+    </a>
+  </div>
+</div>
+<app-home-message></app-home-message>
+<div id="studentMsg">
+  <span>If you are a student, please login to</span>
+  <br>
+  <span id="msgsHyperLink">student portal</span>
+</div>
+<div id="profMsg">
+  <span>If you are a professor, please login to</span>
+  <br>
+  <span id="msgsHyperLink">professor portal</span>
+</div>

@@ -1,0 +1,8 @@
+<div class="card-deck">
+  <div *ngFor="let app of userApps$ | async">
+    <a class="app-link" [routerLink]=app.path>
+      <app-feature-card [name] = app.name [desc] = app.desc [iconUrl] = app.iconUrl></app-feature-card>
+    </a>
+  </div>
+  <router-outlet></router-outlet>
+</div>

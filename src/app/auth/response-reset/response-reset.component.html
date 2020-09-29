@@ -1,0 +1,65 @@
+<div class="container">
+  <div class = "card" id="mainCard"></div>
+  <div class="card" id="responseCard">
+    <div class="card-body">
+      <div class="row" *ngIf="CurrentState=='Wait'">
+        <div class="reponseCard1" id="waitRes">
+            <h2> Please Wait...</h2>
+        </div>
+    </div>
+    <div class="row"
+        *ngIf="CurrentState=='NotVerified'">
+        <div class="reponseCard1" id="invalidRes">
+            <h2> Invalid URL Link.</h2>
+        </div>
+    </div>
+    <div  *ngIf="CurrentState=='Verified'">
+                <div class="card-body" id="reponseCard1">
+                  <div id = "resetPw">
+                    <span>Reset Password</span>
+                  </div>
+                    <div id="formPassword">
+                        <div id="errorMsg" *ngIf="errorMessage">
+                            <span>{{errorMessage}}</span>
+                        </div>
+                        <div id="successMsg" *ngIf="successMessage">
+                            <span>{{successMessage}}</span>
+                        </div>
+                        <form action="" [formGroup]="ResponseResetForm" (ngSubmit)="ResetPassword(ResponseResetForm)">
+                            <div class="form-group">
+                                <input _ngcontent-c0="" class="form-control" placeholder="Password"
+                                    type="password" id="password" formControlName="newPassword" />
+
+                                    <!--
+                                <span *ngIf="!ResponseResetForm.get('newPassword').valid && !IsResetFormValid"
+                                    class="help-block">Password is required with atleast 4 characters.</span>
+                                    -->
+                            </div>
+                            <div class="form-group">
+                                <input _ngcontent-c0="" class="form-control"
+                                    placeholder="Confirm Password" type="password" id="cpassword"
+                                    formControlName="confirmPassword" />
+                                    <!--
+                                <span *ngIf="!ResponseResetForm.get('confirmPassword').valid && !IsResetFormValid"
+                                    class="help-block">. </span>
+                                <span
+                                    *ngIf="ResponseResetForm.get('confirmPassword').valid && (ResponseResetForm.get('confirmPassword').value != ResponseResetForm.get('newPassword').value) && !IsResetFormValid"
+                                    class="help-block">Confirm Password does not match with password.</span>
+                                    -->
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                  <a href="login">
+                                    <button (click)= "router.navigate(['/login'])" type="submit" class="btn" id="btnUpdate">Update Password</button>
+                                  </a>
+                                </div>
+                            </div>
+                          </form>
+                     </div>
+                  </div>
+      </div>
+      </div>
+    </div>
+  <app-home-message></app-home-message>
+
+</div>

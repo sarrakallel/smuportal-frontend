@@ -1,0 +1,63 @@
+<!-- Page Content -->
+<div id="page-content-wrapper">
+  <div class="container">
+    <h1>Security</h1>
+    <p>More advanced security options to increase your account's security</p>
+    <div class="container">
+
+    <!--
+    </div>
+      <div class="card" id="cards">
+        <div class="row">
+            <div class="col">
+                <div class="card-block px-2">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">When you sign in on a new device or from a new location,
+                      we'll send you a security code to your email to enter on
+                      the sign-in page.</p>
+                      <a href="#" class="btn btn-primary">BUTTON</a>
+                </div>
+
+            </div>
+            <div class="col d-block m-auto">
+              <img src="//placehold.it/200" class="img-fluid" alt="">
+          </div>
+        </div>
+    </div>
+    -->
+
+    <div class="d-flex flex-column bd-highlight mt-5" id="cards">
+      <div class="card mb-4 d-flex flex-row">
+        <div class="card-body">
+          <h3 class="card-title">Enable 2FA Email</h3>
+          <p class="card-text pb-4">When you sign in on a new device or from a new location,
+            we'll send you a security code to your email to enter on
+            the sign-in page.</p>
+          <button type="button" class="btn btn-default" (click)="enableEmailTwoFactor()">{{ tfaButtonsText.email }}</button>
+        </div>
+        <svg class="m-4" xmlns="http://www.w3.org/2000/svg" width="260.368" height="166.211"
+          viewBox="0 0 260.368 166.211">
+          <path id="EmailIcon"
+            d="M.072,155.557V18.789q0-.237.753-4.511L85.941,83.137,1.076,160.306a19.157,19.157,0,0,1-1-4.749ZM11.371,4.78a11.372,11.372,0,0,1,4.268-.712H244.874a14.96,14.96,0,0,1,4.519.712l-85.367,69.1-11.3,8.548L130.382,99.758,108.036,82.424l-11.3-8.548Zm.251,164.786L97.239,91.922l33.142,25.406,33.142-25.406,85.618,77.644a12.676,12.676,0,0,1-4.268.712H15.639a11.951,11.951,0,0,1-4.017-.712Zm163.2-86.429,84.865-68.859a13.47,13.47,0,0,1,.753,4.511V155.557a17.283,17.283,0,0,1-.753,4.749Z"
+            transform="translate(-0.072 -4.068)" fill="#9c9c9c" />
+        </svg>
+      </div>
+      <div class="card mb-4 d-flex flex-row">
+        <div class="card-body">
+          <h3 class="card-title">Enable Application 2FA</h3>
+          <p class="card-text pb-4">When you sign in on a new device or from a new location,
+            we'll send you a security code to your chosen 2FA mobile
+            application (such as Google Authenticator) to enter on
+            the sign-in page.</p>
+          <button type="button" class="btn btn-default" (click)="enableAppTwoFactor()">{{ tfaButtonsText.app }}</button>
+        </div>
+        <svg class="mr-5 my-4" xmlns="http://www.w3.org/2000/svg" width="260.368" height="166.211"
+          viewBox="0 0 147.737 248.737">
+          <path id="PhoneIcon"
+            d="M126.018,1.5h-90.3A28.2,28.2,0,0,0,7.5,29.652V221.085a28.2,28.2,0,0,0,28.219,28.152h90.3a28.2,28.2,0,0,0,28.219-28.152V29.652A28.2,28.2,0,0,0,126.018,1.5ZM80.868,237.976A16.891,16.891,0,1,1,97.8,221.085,16.889,16.889,0,0,1,80.868,237.976Zm50.794-45.043H30.075V35.282H131.662Z"
+            transform="translate(-7 -1)" fill="none" stroke="#707070" stroke-width="1" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>

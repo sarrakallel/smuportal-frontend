@@ -1,0 +1,31 @@
+/*
+  TODO:
+  - Add CSS Media Queries
+  - Create common CSS containing common classes (e.g. for fonts)
+*/
+@font-face {
+	font-family: Lato;
+	src: url(https://fonts.googleapis.com/css?family=Lato&display=swap)
+}
+.custom-searchbar {
+  background: transparent;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, .19);
+  border-radius: 20px;
+  width: 500px;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, .7);
+  margin: 0;
+  font-family: 'Lato';
+}
+.custom-searchbar:focus {
+  outline: none;
+}
+.custom-searchicon {
+  margin-left: 20px;
+}
+.custom-submitbutton {
+  background:none;
+  border:none;
+  padding:0;
+}

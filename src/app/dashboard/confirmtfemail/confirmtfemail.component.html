@@ -1,0 +1,30 @@
+<div class="container d-flex h-100">
+  <form #totpForm="ngForm" (ngSubmit)="totpForm.valid && onSubmit(totpForm)" class="main-form border rounded shadow-sm bg-white" novalidate>
+    <div class="row">
+      <div class="col text-center">
+        <div class="alert my-alert" role="alert">
+          Please enter the code that has been
+          sent your email to activate Email Two Factor Authentication.
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col text-center">
+        <div class="form-group w-50 mx-auto">
+          <label for="totpcode">Verification Code : </label>
+          <input type="text" name="totpcode" id="totpcode" class="form-control" #totpcode="ngModel" [(ngModel)]="totpCode.totpcode">
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col text-center">
+          <button type="submit" class="btn btn-primary login-btn-color">Enter</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <br> <!-- Don't judge -->
+        </div>
+      </div>
+  </form>
+</div>

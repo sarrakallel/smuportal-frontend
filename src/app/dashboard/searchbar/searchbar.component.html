@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange()" class="custom-searchbar">
+<!-- Todo: [styles] needs to be seperated in another file-->
+<button type="submit" class="custom-submitbutton">
+  <fa-icon [styles]="{'color': 'white'}" [icon]="faSearch" class="custom-searchicon"></fa-icon>
+</button>
