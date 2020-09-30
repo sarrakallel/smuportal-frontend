@@ -43,7 +43,7 @@ All the dependencies are listed inside [`package.json`][package.json]. Here is a
 
 ## Bug reports
 
-To file one or multiple bug reports, please use the [issue tracker][issue-tracker] related to the approriate repository.
+To file one or multiple bug reports, please use the [issue tracker][issue-tracker] related to the approriate repository.  
 **N.B.** Failure to report the bug in the relevant repository (only frontend bugs should be reported here) or to comply with the template instructions for creating an issue will result in the closure of said issue.
 ## License
 
