@@ -1,4 +1,4 @@
-# SMU Portal - Backend
+# SMU Portal - Frontend
 
 
 ## Table of content
