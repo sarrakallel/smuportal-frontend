@@ -31,7 +31,7 @@ This repository is dedicated to the frontend of SMU Portal, you can find the bac
 
 ## Prerequisites
 
-- [Node.js 12+](https://nodejs.org/en/download/)
+- [Node.js 12+](https://nodejs.org/en/download/) \[Required to install Angular CLI\]
 
 ## Dependencies
 
@@ -47,7 +47,7 @@ To file one or multiple bug reports, please use the [issue tracker][issue-tracke
 **N.B.** Failure to report the bug in the relevant repository (only frontend bugs should be reported here) or to comply with the template instructions for creating an issue will result in the closure of said issue.
 ## License
 
-SMU Portal is licensed under AGPLv3 "or later" by default. Learn more about the permissions and limitations of this license [here](https://github.com/MedTech-CS321/smuportal-backend/blob/master/LICENSE).
+SMU Portal is licensed under AGPLv3 "or later" by default. Learn more about the permissions and limitations of this license [here](https://github.com/MedTech-CS321/smuportal-frontend/blob/master/LICENSE).
 
 ## Contact
 
