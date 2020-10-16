@@ -1,38 +1,38 @@
 @font-face {
-	font-family: Lato;
-	src: url(https://fonts.googleapis.com/css?family=Lato&display=swap)
+  font-family: "Lato";
+  src: url(https://fonts.googleapis.com/css?family=Lato&display=swap);
 }
 
-#AlreadyAccount{
+#AlreadyAccount {
   position: absolute;
-	overflow: visible;
+  overflow: visible;
   top: 575px;
   right: 20px;
-	width: 80%
+  width: 80%;
 }
 .container {
-	position: absolute
+  position: absolute;
 }
 
 #mainCard {
-	overflow: visible;
-	position: absolute;
-	left: 315px;
-	top: 118px;
-	width: 1290px;
-	height: 743px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 #00000030
+  overflow: visible;
+  position: absolute;
+  left: 315px;
+  top: 118px;
+  width: 1290px;
+  height: 743px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #00000030;
 }
 
 #RegisterCard {
-	filter: drop-shadow(0 3px 6px #00000029);
-	position: absolute;
-	overflow: visible;
-	width: 447px;
-	height: 600px;
-	left: 1124px;
-	top: 250px;
-	border-radius: 20px 0 20px 0
+  filter: drop-shadow(0 3px 6px #00000029);
+  position: absolute;
+  overflow: visible;
+  width: 447px;
+  height: 600px;
+  left: 1124px;
+  top: 250px;
+  border-radius: 20px 0 20px 0;
 }
 
 #firstNameForm {
@@ -46,37 +46,37 @@
 #lastNameForm {
   position: absolute;
   overflow: visible;
-	top: 215px;
-	width: 80%
+  top: 215px;
+  width: 80%;
 }
 
 #idForm {
   position: absolute;
   overflow: visible;
-	top: 295px;
-	width: 80%
+  top: 295px;
+  width: 80%;
 }
 
 #emailForm {
   position: absolute;
   overflow: visible;
-	top: 375px;
-	width: 80%
+  top: 375px;
+  width: 80%;
 }
 
 #passwordForm {
   position: absolute;
   overflow: visible;
-	top: 455px;
-	width: 80%
+  top: 455px;
+  width: 80%;
 }
 
 .RegisterBtnColor {
-	background-color: #e27222;
-	width: 80%;
-	height: 35px;
-	color: #fff;
-	border-color: #ffffff00
+  background-color: #e27222;
+  width: 80%;
+  height: 35px;
+  color: #fff;
+  border-color: #ffffff00;
 }
 
 .btnPosition {
@@ -89,7 +89,7 @@
   position: absolute;
   top: 535px;
   width: 30%;
-  right: 15%
+  right: 15%;
 }
 
 .invalid {

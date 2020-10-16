@@ -14,6 +14,7 @@ export class RegisterComponent implements OnInit {
   emailRegEx = environment.EMAIL_CONFIG.EMAIL_DOMAINS;
   submitted = false;
   loading = false;
+  errRegisterMsg = "";
 
   form: FormGroup = new FormGroup({
     firstName: new FormControl("", [
@@ -81,7 +82,7 @@ export class RegisterComponent implements OnInit {
             this.router.navigateByUrl('/login');
           },
           error: err => {
-            console.log(err);
+            this.errRegisterMsg = err.error.error;
           }
         });
     }
