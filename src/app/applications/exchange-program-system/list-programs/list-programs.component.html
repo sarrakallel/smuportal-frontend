@@ -1,0 +1,37 @@
+<p>list-programs works!</p>
+<div class="table-responsive">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Information</th>
+          <th scope="col">Country</th>
+          <th scope="col">University</th>
+          <th scope="col">Deadline</th>
+          <th scope="col">GPA</th>
+          <th scope="col">ProgramType</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let book of listOfBooks | async; let i = index;">
+          <tr>
+            <th scope="row">{{i}}</th>
+            <td>{{program.Name}}</td>
+            <td>{{program.Information}}</td>
+            <td>{{program.Country}}</td>
+            <td>{{program.University}}</td>
+            <td>{{program.Deadline}}</td>
+            <td>{{program.GPA}}</td>
+            <td>{{program.ProgramType}}</td>
+            
+            
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-success" (click)="goToAdd()">Add Program</button>
+  </div>

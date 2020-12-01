@@ -11,7 +11,7 @@ import { ColorGuideComponent } from "./color-guide/color-guide.component";
 import { BoxBookingComponent } from "./box-booking/box-booking.component";
 const routes: Routes = [
   {
-    path: "logistics",
+    path: "",
     component: BoxListComponent
   },
   {

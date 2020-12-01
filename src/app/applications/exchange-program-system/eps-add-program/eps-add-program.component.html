@@ -1,0 +1,41 @@
+<p>eps-add-program works!</p>
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row justify-content-center mt-5 h-100">
+    <div class="col-6 text-center">
+      <div class="main-header">
+        <h2>Add New Program</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-4">
+    <div class="col-3">
+
+      <ng-container *ngIf="this.programAdded | async">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          The Program Has Been Successfully Added.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </ng-container>
+
+    <form [formGroup]="programForm" (ngSubmit)="onSubmit(programForm.value)">
+      <div class="form-group">
+        <label for="programName">Name</label>
+        <input type="programName" class="form-control" id="programName" placeholder="Enter name" formControlName="name">
+      </div>
+
+      <div class="form-group">
+        <label for="programCountry">Country</label>
+        <input type="text" class="form-control" id="programCountry" placeholder="Country" formControlName="country">
+      </div>
+    
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="btn-group mt-1" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-success" (click)="goBack()">Return</button>
+    </div>
+  </div>
+</div>
+

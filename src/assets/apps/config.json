@@ -15,6 +15,11 @@
     "path": "/apps/docs"
   },
   {
+    "appName": "Exchange program system",
+    "iconUrl": "exchange.png",
+    "path": "/apps/eps"
+  },
+  {
     "appName": "Admin Dashboard",
     "iconUrl": "users.png",
     "path": "/apps/admin"

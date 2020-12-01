@@ -93,6 +93,6 @@ export class BoxListComponent implements OnInit {
     return true;
   }
   bookBox(boxId) {
-    this.router.navigate(["/apps/book-box", boxId]);
+    this.router.navigate(["/apps/logistics/book-box", boxId]);
   }
 }
